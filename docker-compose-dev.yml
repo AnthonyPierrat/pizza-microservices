@@ -7,4 +7,6 @@ services:
     command: node_modules/.bin/nodemon -L --exec babel-node server.js  
     ports:
       - "3000:3000"
+    volumes:
+      - ./pizza:/src
   

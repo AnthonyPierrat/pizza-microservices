@@ -1,0 +1,10 @@
+version: '3'
+services:
+  pizza:
+    build:
+      context: ./pizza
+      dockerfile: Dockerfile-dev
+    command: node_modules/.bin/nodemon -L --exec babel-node server.js  
+    ports:
+      - "3000:3000"
+  

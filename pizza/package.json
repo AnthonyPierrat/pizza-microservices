@@ -1,0 +1,23 @@
+{
+  "name": "pizza-service",
+  "version": "1.0.0",
+  "description": "pizza service",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon -L --exec babel-node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anthony Pierrat",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.4.3",
+    "babel-preset-airbnb": "^3.2.1",
+    "nodemon": "^1.18.11"
+  }
+}

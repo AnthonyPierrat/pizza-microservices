@@ -10,7 +10,8 @@
   "author": "Anthony Pierrat",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "mongoose": "^5.5.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.3",

@@ -9,4 +9,17 @@ services:
       - "3000:3000"
     volumes:
       - ./pizza:/src
+    depends_on:
+      - database
+    env_file:
+      - .env
+
+  database:
+    image: mongo
+    env_file:
+        - .env
+    ports:
+      - "27017:27017"
+    volumes:
+      - "./data:/data/db"
   

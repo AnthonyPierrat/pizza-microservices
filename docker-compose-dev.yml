@@ -13,6 +13,8 @@ services:
       - database
     env_file:
       - .env
+    links:
+      - database
 
   database:
     image: mongo
